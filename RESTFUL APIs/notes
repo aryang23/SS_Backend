@@ -1,0 +1,54 @@
+//REST Conventions
+
+CRUD => Create, Read, Update, Delete
+
+//REST
+
+//Basic Blog App
+//Write this CRUD
+
+//API to create a blog
+
+//blog => We can use HTTP Methods
+
+//creating a resource
+
+//PUT Resources as Plural in API
+
+//Create
+{
+    //URL -> //blogs
+    //METHOD -> POST
+}
+
+//Read
+{
+    //URL -> /blogs
+    url: "/blogs";
+    method: "GET"
+}
+
+//API To read a specific blog
+{
+    //URL -> /blogs/:id
+    //Method -> GET
+}
+
+//API to delete a blog
+{
+    //URL -> /blogs/:id
+    //Method -> DELETE
+}
+
+//API to update a blog
+{
+    //URL -> /blogs/:id
+    //Method -> PUT, PATCH
+    //Updating Data should be in body params
+    //bodyParams: {title: "newTitle"}
+}
+
+//Q. Why we need Body Parser, Why we need seperate package for that
+
+
+//What is Middelware
