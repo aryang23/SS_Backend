@@ -1,0 +1,59 @@
+Q. What happens before?
+1. Data Redundancy
+2. Data inconsistency
+3. Difficult to data access
+4. Security
+6. Data Concurrent Access -> How 2 persons will be able to access the data
+
+
+Database is nothing but a shared collection of data
+
+Then managing systems was hard
+
+Then DBMS was there
+Database Management systems
+
+They help us to create, fetch and maintain data in Database
+
+Database is just a collection of data
+
+Problems they solve
+1. Control Data Redundancy(Faltu Data) -> Normalization which helps in solving that a lot
+
+2. It helps us to put constraints
+
+3. Maintains Restriction of unauthroized access
+
+4. Easy Backup and Recovery Functionality
+
+Data Redundancy can lead to Data Inconsistency
+
+
+Database Management Systems
+
+RDBMS
+Relational Database Management Systems which maintains data in form of tables
+
+We store data in form of tables
+EG. MySQL, PgSQL, Oracle SQL, Sqlite
+
+SQL Standards
+
+SQL => Structured Query Language
+
+New Language to interact with Databases
+
+SQL is Declarative Language => We don't tell how to do something, we tell what we want to do
+We don't write logic, we write what we want to do
+
+MySQL is a software
+SQL is a language that MySQL will be going to support
+But It might not support all the features
+So, It's based on Softwares
+
+
+Anyone of DB well
+
+
+MySQL Very Simple, Quite Scalable and Good Community Support
+
