@@ -57,3 +57,79 @@ Anyone of DB well
 
 MySQL Very Simple, Quite Scalable and Good Community Support
 
+CASE Insensitive
+Semicolon is necessary
+
+
+* Commands
+
+1. List all the databases
+show databases;
+
+2. Create a database
+CREATE DATABASE <name of database>;
+CREATE DATABASE Blogging;
+
+3. Use that Database/ Start working on the DB
+USE <database name>;
+USE Blogging;
+
+4. DELETE a Datavase
+DROP DATABASE <db name>;
+DROP DATABASE Blogging;
+
+RDBMS in Tables
+
+Property will be in columns
+Columns defines Attributes
+
+Every Row actually defines every blog or every entry
+
+5. List all tables
+SHOW TABLES;
+
+6. Creating a Table
+CREATE TABLE <tablename> (attributename attributetype extra_properties_for_attribute);
+
+CREATE TABLE BLOGS (title VARCHAR(50),
+id Int,
+content VARCHAR(1200)
+);
+
+//String => VARCAHR
+
+7. Delete a table
+DROP TABLE Blogs;
+
+8. Descrive
+describe <tablename>;
+
+
+//Movies DB
+1. CREATE DATABASE Movies;
+2. USE Movies;
+
+Diff Datatypes
+1. Numeric => INT, Decimal, BIGINT
+2. STRING => CHAR, VARCHAR, ENUM etc
+3. Datetime => Date, Time, DATETIME
+4. JSON
+
+CREATE TABLE Actors (
+    Name VarChar(20),
+    Gender ENUM("Male", "Female", "Trans"),
+    Charges Decimal;
+);
+
+
+DESCRIBE:
+DESCRIBE Actors; or
+DESC Actors;
+
+
+CREATE TABLE Actors (
+    Name VarChar(20) NOT NULL,
+    Gender ENUM("Male", "Female", "Trans") NOT NULL,
+    Charges Decimal,
+    ID Int AUTO_INCREMENT UNIQUE,
+);
