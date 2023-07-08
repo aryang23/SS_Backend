@@ -1,0 +1,51 @@
+MVC is Model View Controller Architecture
+
+main about setup the project
+
+view is what we see -> Menu
+controller is first line of interaction
+Controller duty is to take the request from the user and then pass it to the Model
+Controller should not have any business logic and they should be very thin
+
+All the secret ingredients, business logic will be in Models
+
+From views -> we make request to controller 
+Sometimes, we even return from controller OR they can push to the model layer
+
+O/P goes like
+Model -> Controller -> views
+
+
+//API Based Backend
+
+
+Models contain how the data will be stored like
+Like the structure of that
+
+Controller pass it to the service layer where all the business logic will be there
+
+
+//Booking a movie
+
+* Service Layer *
+
+//In repository, there will be interation with DB
+service layer will interact with DB
+
+Models will just define how one layer of the DB will be
+
+* Middelwares
+That have access to req object and resp object and the next middelware
+
+app.get('/home', m1, m2, (req, res)=>{
+    service();
+})
+
+m1 and m2 are middelwares and they have access to next middelware
+Controller is also a kind of middleware, which don't have access to the next
+
+API is just a contract => Everything happens inside like Bank Loan
+
+
+//Views should never connect with Model
+
