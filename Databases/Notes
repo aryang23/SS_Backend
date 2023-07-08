@@ -133,3 +133,33 @@ CREATE TABLE Actors (
     Charges Decimal,
     ID Int AUTO_INCREMENT UNIQUE,
 );
+
+
+CREATE TABLE Actors (
+    Name VarChar(20) NOT NULL,
+    Gender ENUM("Male", "Female", "Trans") NOT NULL,
+    Charges Decimal,
+    ID Int AUTO_INCREMENT UNIQUE,
+    Primary Key(ID)
+);
+
+CREATE TABLE IF NOT EXISTS Actors (...);
+
+
+* INSERT DATA IN DB
+
+Insert INTO <TableName> (NAME, Charges, GENDER) VALUES ("Aryan", 20CR, "MALE");
+
+Insert INTO <TableName> (NAME, Charges, GENDER) VALUES ("Aryan", 20CR, "MALE"), ("Grover", 30CR, "FEMALE");
+
+
+* GET THE Data
+SELECT is for retreving the data
+
+SELECT <attr1, attr2> from <tablename>;
+SELECT NAME, GENDER FROM ACTORS;
+
+For Getting all
+SELECT * FROM <tablename>;
+SELECT * FROM <actors>;
+
