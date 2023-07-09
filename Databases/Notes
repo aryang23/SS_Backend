@@ -49,7 +49,7 @@ We don't write logic, we write what we want to do
 MySQL is a software
 SQL is a language that MySQL will be going to support
 But It might not support all the features
-So, It's based on Softwares
+So, Its based on Softwares
 
 
 Anyone of DB well
@@ -162,4 +162,53 @@ SELECT NAME, GENDER FROM ACTORS;
 For Getting all
 SELECT * FROM <tablename>;
 SELECT * FROM <actors>;
+
+
+
+***
+* DB2 
+
+WHERE Clause
+SELECT * FROM ACTORS WHERE CHARGES >= 350000;
+
+Operators
+>, <, >=, ..., =(equals), <>(not equals), IN, LIKE
+
+SELECT * FROM ACTORS WHERE Name like "C%";
+
+SELECT * from ACTORS Where Name like "%depp"
+
+
+Combining Queries
+Select * from actors where charges >= 350000 and id<4;
+Select * from actors where NOT(charges>=35000 XOR Id<4>);
+
+
+
+ORDER BY
+Select * from actors Order By Charges;
+Select * from actors Order By Charges DESC;
+
+
+UPDATE 
+UPDATE Actors Set Name = "Chris" WHERE Name="CE"
+
+Adding Extra Column
+ALTER Commands
+ALTER TABLE Actors Add Dob Datetime;
+
+Alter Table Actors Drop Dob;
+
+LIMIT 2 for showing only 2 records
+OFFSET 2 for starting from that Index
+
+
+KEYS are coming:
+Foreign Key is a column which is actually a primary key in another column
+
+
+ORM => Object Relational Mapper
+
+Libraries that help you to actually do database queries but instead of writing SQL Syntax, we write Object oriented syntax.
+
 
